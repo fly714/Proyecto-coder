@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cuerpo{
+    background-color: aquamarine;
+    margin: 5px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+@mixin mobile{
+    @media (max-width: 425px){
+        @content
+    }
+}
+.subtit1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    color: blue;
+}
+@include mobile{
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #logolav{
+        margin-top: 80px;
+        position: fixed;
+    }
+    #logowhat{
+        margin-top: 20px;
+    }
+}

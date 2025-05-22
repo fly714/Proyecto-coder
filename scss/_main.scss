@@ -1,0 +1,105 @@
+main{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 9;
+    .descripcion{
+        display: flex;
+        text-align: center;
+        font-size: 20px; 
+        font-style: italic;
+        justify-content: end;
+        align-items: end;
+        margin: 30px 180px;
+        margin-top: 0;
+    }
+    .subtit{
+        margin-top: 120px;
+        font-weight: bold;
+        text-decoration: overline dashed black;
+        font-family: "Oswald", sans-serif;
+        font-size: 30px;
+    }
+    .titprod{
+        display: flex;
+        justify-content: start;
+        align-items: end;
+    }
+    .compra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        gap: 20px;
+    }
+    .productos1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .datos{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    label{
+        font-size: 20px;
+    }
+    .datos input{
+        width: 400px;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        .descripcion{
+            display: none;
+        }
+        .subtit{
+            text-align: center;
+            margin-top: 150px;
+        }
+        .titprod{
+            margin-top: 20px;
+            border: 1px black solid;
+        }
+        .datos input{
+            display: flex;
+            width: auto;
+        }
+    }
+}
+.main-comentarios{
+    display: grid;
+    grid-row: 2/3;
+    height: auto;
+    .descrip-comentarios{
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: start;
+        font-style: italic;
+    }
+    .comentario{
+        width: 60vw;
+        height: 40vh;
+        position: absolute;
+        margin-top: 150px;  
+    }
+    @include mobile{
+        .main-comentarios{
+            display: flex;
+            flex-direction: column;
+            .descrip-comentarios{
+                display: flex;
+                text-align: center;
+                margin-top: 140px;
+            }
+            .comentario{
+                position: relative;
+                margin-top: 80px;
+                width: auto;
+            }
+        }
+    }
+}

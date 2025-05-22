@@ -1,0 +1,58 @@
+header{
+    width: 98vw;
+    height: auto;
+
+    .navbar navbar-expand-lg bg-body-tertiary{
+        display: flex;
+        position: fixed;
+    }
+    .logo{
+        display: flex;
+        position: absolute;
+        width: 250px;
+        padding: 0;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .titulo{
+        display: flex;
+        text-decoration: underline;
+        font-size: 40px;
+        color: blue;
+        justify-content: center;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .logo-whatsapp{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .whatsapp{
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        margin-left: auto;
+        margin-right: 10px;
+        }
+    @include mobile{
+        .logo{
+            display: flex;
+            width: 120px;
+            height: 120px;
+            margin-left: 2px;
+            margin-top: 40px;
+        }
+        .titulo{
+            font-size: 20px;
+        }
+        .whatsapp{
+            width: 50px;
+            height: 50px;
+            margin-top: 70px;
+            right: 25px;
+        }
+        .subtit1{
+            display: none;
+        }
+    }
+}
