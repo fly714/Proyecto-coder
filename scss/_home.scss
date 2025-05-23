@@ -1,0 +1,79 @@
+.main{
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 9;
+    .descripcion{
+        display: flex;
+        text-align: center;
+        font-size: 20px; 
+        font-style: italic;
+        justify-content: end;
+        align-items: end;
+        margin: 30px 180px;
+        margin-top: 0;
+    }
+    .imagenes{
+        display: grid;
+        grid-template-areas: 
+        "a b f"
+        "c h d"
+        "g e e";
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+        padding-top: 30px;
+        margin: 0 40px;
+        .a{
+            grid-area: a;
+            @include imagenes;
+        }
+        .b{
+            grid-area: b;
+            @include imagenes;
+        }
+        .c{
+            grid-area: c;
+            @include imagenes;
+        }
+        .d{
+            grid-area: d;
+            @include imagenes;
+        }
+        .e{
+            grid-area: e;
+            width: 450px;
+            height: 300px;
+            border: blue solid 1px;
+        }
+        .f{ 
+            grid-area: f;
+            @include imagenes;
+        }
+        .g{
+            grid-area: g;
+            @include imagenes;
+        }
+        .h{
+            grid-area: h;
+            width: 300px;
+            height: 200px;
+            border: blue solid 1px;
+        }
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        .descripcion{
+            display: none;
+        }
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            .a, .b, .c, .d, .e, .f, .g, .h{
+                width: 40vw;
+                height: 30vh;
+            }
+        }     
+    }
+}

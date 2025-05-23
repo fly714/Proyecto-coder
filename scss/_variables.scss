@@ -38,3 +38,9 @@
         margin-top: 20px;
     }
 }
+@mixin imagenes{
+    width: 300px;
+    height: 300px;
+    border: blue solid 1px;
+}
+

@@ -1,17 +1,47 @@
-main{
-    display: grid;
-    grid-column: 1 / 4;
-    grid-row: 2 / 9;
-    .descripcion{
+.main{
+    .lista_servicios{
         display: flex;
-        text-align: center;
-        font-size: 20px; 
+        flex-direction: column;
         font-style: italic;
-        justify-content: end;
-        align-items: end;
-        margin: 30px 180px;
-        margin-top: 0;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
     }
+    #servicios{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        margin-top: 30px;
+        text-decoration: dotted;
+    }
+    .empresas{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .ilo{
+            @include imagenes;
+        }
+        .sab{
+            width: 300px;
+            height: 200px;
+            border: blue solid 1px;
+        }
+        .cort{
+            @include imagenes;
+        }
+        .mochi{
+            @include imagenes;
+        }
+        .litro1{
+            @include imagenes;
+        }
+        .litro2{
+            @include imagenes;
+        }
+    }
+    .li{
+        list-style: none;
+    }
+    
     .subtit{
         margin-top: 120px;
         font-weight: bold;
@@ -31,6 +61,14 @@ main{
         margin-top: 20px;
         align-items: center;
         gap: 20px;
+    }
+    .compra label{
+        width: 300px;
+        height: auto;
+        background-color: rgb(158, 158, 252);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 3px black solid;
+        padding: 2px;
     }
     .productos1{
         display: flex;
@@ -63,12 +101,38 @@ main{
             margin-top: 20px;
             border: 1px black solid;
         }
+        .precios{
+            width: 40vw;
+            display: flex;
+            border: 2.5px black solid;
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            background-color: rgb(39, 135, 245);
+            align-items: center;
+            margin-left: 320px;
+        }
         .datos input{
             display: flex;
             width: auto;
         }
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+        .lista_servicios{
+            justify-content: center;
+            align-items: center;
+        }
+        .empresas{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
+
 .main-comentarios{
     display: grid;
     grid-row: 2/3;
@@ -86,20 +150,62 @@ main{
         position: absolute;
         margin-top: 150px;  
     }
+    .ubicacion{
+        display: flex;
+        margin-top: 100px;
+        font-size: 45px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: start;
+        text-decoration: underline;
+        @include mobile{
+            display: flex;
+            font-size: 30px;
+            margin-top: 140px;
+        }
+    }
+    .mapa{
+        position: absolute;
+        margin-top: 180px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 27vw;
+    }
+    .mapa1{
+        width: 50vw;
+        height: 70vh;
+    }
+    
+    /*.main iframe{
+        display: flex;
+        width: 50vw;
+        height: 50vh;
+        margin-top: 50px;
+    }*/
     @include mobile{
         .main-comentarios{
             display: flex;
             flex-direction: column;
-            .descrip-comentarios{
-                display: flex;
-                text-align: center;
-                margin-top: 140px;
-            }
-            .comentario{
-                position: relative;
-                margin-top: 80px;
-                width: auto;
-            }
         }
+        .mapa{
+            display: flex;
+            position: relative;
+            margin-top: 20px;
+            padding: 1px;
+        }    
+        .mapa1{
+            width: auto;
+            margin-top: 50px;
+        }
+        .descrip-comentarios{
+            display: flex;
+            text-align: center;
+            margin-top: 140px;
+        }
+        .comentario{
+            position: relative;
+            margin-top: 80px;
+            width: auto;
+        } 
     }
 }

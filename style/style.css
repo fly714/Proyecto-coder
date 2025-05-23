@@ -120,34 +120,71 @@ footer .redes {
   }
 }
 
-main {
-  display: grid;
-  grid-column: 1/4;
-  grid-row: 2/9;
-}
-main .descripcion {
+.main .lista_servicios {
   display: flex;
-  text-align: center;
-  font-size: 20px;
+  flex-direction: column;
   font-style: italic;
-  justify-content: end;
-  align-items: end;
-  margin: 30px 180px;
-  margin-top: 0;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-main .subtit {
+.main #servicios {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin-top: 30px;
+  text-decoration: dotted;
+}
+.main .empresas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .empresas .ilo {
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .empresas .sab {
+  width: 300px;
+  height: 200px;
+  border: blue solid 1px;
+}
+.main .empresas .cort {
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .empresas .mochi {
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .empresas .litro1 {
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .empresas .litro2 {
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .li {
+  list-style: none;
+}
+.main .subtit {
   margin-top: 120px;
   font-weight: bold;
   text-decoration: overline dashed black;
   font-family: "Oswald", sans-serif;
   font-size: 30px;
 }
-main .titprod {
+.main .titprod {
   display: flex;
   justify-content: start;
   align-items: end;
 }
-main .compra {
+.main .compra {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,42 +192,75 @@ main .compra {
   align-items: center;
   gap: 20px;
 }
-main .productos1 {
+.main .compra label {
+  width: 300px;
+  height: auto;
+  background-color: rgb(158, 158, 252);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px black solid;
+  padding: 2px;
+}
+.main .productos1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-main .datos {
+.main .datos {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-content: space-around;
 }
-main label {
+.main label {
   font-size: 20px;
 }
-main .datos input {
+.main .datos input {
   width: 400px;
 }
 @media (max-width: 425px) {
-  main {
+  .main {
     display: flex;
     flex-direction: column;
   }
-  main .descripcion {
+  .main .descripcion {
     display: none;
   }
-  main .subtit {
+  .main .subtit {
     text-align: center;
     margin-top: 150px;
   }
-  main .titprod {
+  .main .titprod {
     margin-top: 20px;
     border: 1px black solid;
   }
-  main .datos input {
+  .main .precios {
+    width: 40vw;
+    display: flex;
+    border: 2.5px black solid;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(39, 135, 245);
+    align-items: center;
+    margin-left: 320px;
+  }
+  .main .datos input {
     display: flex;
     width: auto;
+  }
+  .main .imagenes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .main .lista_servicios {
+    justify-content: center;
+    align-items: center;
+  }
+  .main .empresas {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -198,6 +268,12 @@ main .datos input {
   display: grid;
   grid-row: 2/3;
   height: auto;
+  /*.main iframe{
+      display: flex;
+      width: 50vw;
+      height: 50vh;
+      margin-top: 50px;
+  }*/
 }
 .main-comentarios .descrip-comentarios {
   display: flex;
@@ -212,20 +288,148 @@ main .datos input {
   position: absolute;
   margin-top: 150px;
 }
+.main-comentarios .ubicacion {
+  display: flex;
+  margin-top: 100px;
+  font-size: 45px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: start;
+  text-decoration: underline;
+}
+@media (max-width: 425px) {
+  .main-comentarios .ubicacion {
+    display: flex;
+    font-size: 30px;
+    margin-top: 140px;
+  }
+}
+.main-comentarios .mapa {
+  position: absolute;
+  margin-top: 180px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 27vw;
+}
+.main-comentarios .mapa1 {
+  width: 50vw;
+  height: 70vh;
+}
 @media (max-width: 425px) {
   .main-comentarios .main-comentarios {
     display: flex;
     flex-direction: column;
   }
-  .main-comentarios .main-comentarios .descrip-comentarios {
+  .main-comentarios .mapa {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    padding: 1px;
+  }
+  .main-comentarios .mapa1 {
+    width: auto;
+    margin-top: 50px;
+  }
+  .main-comentarios .descrip-comentarios {
     display: flex;
     text-align: center;
     margin-top: 140px;
   }
-  .main-comentarios .main-comentarios .comentario {
+  .main-comentarios .comentario {
     position: relative;
     margin-top: 80px;
     width: auto;
+  }
+}
+
+.main {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/9;
+}
+.main .descripcion {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  justify-content: end;
+  align-items: end;
+  margin: 30px 180px;
+  margin-top: 0;
+}
+.main .imagenes {
+  display: grid;
+  grid-template-areas: "a b f" "c h d" "g e e";
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 30px;
+  margin: 0 40px;
+}
+.main .imagenes .a {
+  grid-area: a;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .b {
+  grid-area: b;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .c {
+  grid-area: c;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .d {
+  grid-area: d;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .e {
+  grid-area: e;
+  width: 450px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .f {
+  grid-area: f;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .g {
+  grid-area: g;
+  width: 300px;
+  height: 300px;
+  border: blue solid 1px;
+}
+.main .imagenes .h {
+  grid-area: h;
+  width: 300px;
+  height: 200px;
+  border: blue solid 1px;
+}
+@media (max-width: 425px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .descripcion {
+    display: none;
+  }
+  .main .imagenes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .main .imagenes .a, .main .imagenes .b, .main .imagenes .c, .main .imagenes .d, .main .imagenes .e, .main .imagenes .f, .main .imagenes .g, .main .imagenes .h {
+    width: 40vw;
+    height: 30vh;
   }
 }
 
