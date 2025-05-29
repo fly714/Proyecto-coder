@@ -13,6 +13,38 @@
         margin-top: 30px;
         text-decoration: dotted;
     }
+    .a:hover{
+        @include hover;
+    }
+    @include big;
+    .b:hover{
+        @include hover;
+    }
+    @include big;
+    .c:hover{
+        @include hover;
+    }
+    @include big;
+    .d:hover{
+        @include hover;
+    }
+    @include big;
+    .e:hover{
+        @include hover;
+    }
+    @include big;
+    .f:hover{
+        @include hover;
+    }
+    @include big;
+    .g:hover{
+        @include hover;
+    }
+    @include big;
+    .h:hover{
+        @include hover;
+    }
+    @include big;
     .empresas{
         display: flex;
         justify-content: space-around;
@@ -122,6 +154,7 @@
             flex-direction: column;
             margin-top: 60px;
         }
+        
         .lista_servicios{
             justify-content: center;
             align-items: center;

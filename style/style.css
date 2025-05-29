@@ -72,6 +72,26 @@ header .whatsapp {
   margin-left: auto;
   margin-right: 10px;
 }
+header .whatsapp:hover {
+  animation: vibrar 2s infinite;
+}
+@keyframes vibrar {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media (max-width: 425px) {
   header .logo {
     display: flex;
@@ -133,6 +153,102 @@ footer .redes {
   font-size: 20px;
   margin-top: 30px;
   text-decoration: dotted;
+}
+.main .a:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .b:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .c:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .d:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .e:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .f:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .g:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+.main .h:hover {
+  animation: big 2s ease;
+  animation-fill-mode: forwards;
+}
+@keyframes big {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
 }
 .main .empresas {
   display: flex;
@@ -268,12 +384,7 @@ footer .redes {
   display: grid;
   grid-row: 2/3;
   height: auto;
-  /*.main iframe{
-      display: flex;
-      width: 50vw;
-      height: 50vh;
-      margin-top: 50px;
-  }*/
+
 }
 .main-comentarios .descrip-comentarios {
   display: flex;

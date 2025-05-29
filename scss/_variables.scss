@@ -43,4 +43,18 @@
     height: 300px;
     border: blue solid 1px;
 }
+@mixin hover{
+    animation: big 2s ease;
+    animation-fill-mode: forwards;
+}
+@mixin big{
+    @keyframes big {
+        0%{
+            scale: 1;
+        }
+        100%{
+            scale: 1.5;
+        }
+    }
+}
 
