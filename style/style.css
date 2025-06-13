@@ -289,7 +289,7 @@ footer .redes {
   list-style: none;
 }
 .main .subtit {
-  margin-top: 120px;
+  margin-top: 160px;
   font-weight: bold;
   text-decoration: overline dashed black;
   font-family: "Oswald", sans-serif;
@@ -384,7 +384,6 @@ footer .redes {
   display: grid;
   grid-row: 2/3;
   height: auto;
-
 }
 .main-comentarios .descrip-comentarios {
   display: flex;
