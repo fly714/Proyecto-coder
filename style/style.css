@@ -316,6 +316,13 @@ footer .redes {
   border: 3px black solid;
   padding: 2px;
 }
+.main .botcompra {
+  width: 150px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 30px;
+  font-weight: bold;
+}
 .main .productos1 {
   display: flex;
   flex-flow: row wrap;

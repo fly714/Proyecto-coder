@@ -102,6 +102,9 @@
         border: 3px black solid;
         padding: 2px;
     }
+    .botcompra{
+        @include botones;
+    }
     .productos1{
         display: flex;
         flex-flow: row wrap;
@@ -185,11 +188,7 @@
         border-radius: 15px;
     }
     .botenv{
-        width: 150px;
-        height: 60px;
-        background-color: blue;
-        border-radius: 30px;
-        font-weight: bold;
+        @include botones;
     }
     #mensaje{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

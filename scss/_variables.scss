@@ -57,4 +57,11 @@
         }
     }
 }
+@mixin botones{
+    width: 150px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 30px;
+    font-weight: bold;
+}
 

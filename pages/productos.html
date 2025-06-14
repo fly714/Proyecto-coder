@@ -152,6 +152,9 @@
             <label for="telefono">TELEFONO</label>
             <input type="number" name="telefono" id="telefono">
         </form>
+        <button class="botcompra" onclick="enviarMensaje()">Confirmar compra</button>
+        <div id="mensaje" style="display:none;">Su compra a sido realizada</div>
+        <audio id="audioEnvio" src="../sonidos/llv-132676.mp3" preload="auto"></audio>
     </main>
     <footer class="footer">
         <h4>Derechos Reservados</h4>
@@ -162,6 +165,11 @@
             <img class="redes" src="../images/instagram.png" alt="instagram">
         </a>
     </footer>
+    <script>
+        function enviarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+            document.getElementById("audioEnvio").play();}
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script>
