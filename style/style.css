@@ -397,6 +397,18 @@ footer .redes {
   height: 40vh;
   position: absolute;
   margin-top: 150px;
+  border-radius: 15px;
+}
+.main-comentarios .botenv {
+  width: 150px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.main-comentarios #mensaje {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
 .main-comentarios .ubicacion {
   display: flex;

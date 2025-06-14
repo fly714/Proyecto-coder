@@ -182,6 +182,18 @@
         height: 40vh;
         position: absolute;
         margin-top: 150px;  
+        border-radius: 15px;
+    }
+    .botenv{
+        width: 150px;
+        height: 60px;
+        background-color: blue;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    #mensaje{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
     }
     .ubicacion{
         display: flex;
