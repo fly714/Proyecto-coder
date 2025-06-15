@@ -104,6 +104,7 @@
     }
     .botcompra{
         @include botones;
+        margin-top: 10px;
     }
     .productos1{
         display: flex;
