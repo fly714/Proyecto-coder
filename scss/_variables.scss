@@ -3,7 +3,11 @@
     padding: 0;
 }
 .cuerpo{
-    background-color: aquamarine;
+    background-image: url(../images/burbujas\ fondo\ pantalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 5px;
     height: auto;
     display: grid;
